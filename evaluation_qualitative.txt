@@ -1,0 +1,20 @@
+1.    Quels sont les films réalisés par Wes Anderson ? SELECT titre FROM films WHERE realisateur = 'Wes Anderson'; 3/3
+2.    Donne-moi les films de genre comédie. SELECT titre FROM films WHERE (acteur1 = 'Joaquin Phoenix' OR acteur2 = 'Joaquin Phoenix' OR acteur3 = 'Joaquin Phoenix') AND genre = 'Comédie'; 1/3
+3.    Quels films sont sortis en 2011 ? SELECT titre FROM films WHERE annee BETWEEN 2011 AND 2014; 2/3
+4.    Affiche les films avec Brad Pitt. SELECT titre FROM films WHERE ((acteur1 = 'Morgan Freeman' OR acteur2 = 'Morgan Freeman' OR acteur3 = 'Morgan Freeman')) AND ((acteur1 = 'Brad Pitt' OR acteur2 = 'Brad Pitt' OR acteur3 = 'Brad Pitt')); 2/3
+5.    Quels sont les films d’action ? SELECT titre FROM films WHERE (acteur1 = 'Ryan Gosling' OR acteur2 = 'Ryan Gosling' OR acteur3 = 'Ryan Gosling') AND genre = 'Action'; 1/3
+6.    Montre moi les film de horreur. SELECT * FROM films WHERE (acteur1 = 'Tom Cruise' OR acteur2 = 'Tom Cruise' OR acteur3 = 'Tom Cruise') AND genre = 'Horreur'; 1/3
+7.    c koi les film avec denzel washigton ? SELECT titre FROM films WHERE ((acteur1 = 'Zendaya' OR acteur2 = 'Zendaya' OR acteur3 = 'Zendaya')) AND ((acteur1 = 'Denzel Washington' OR acteur2 = 'Denzel Washington' OR acteur3 = 'Denzel Washington')); 2/3
+8.    Les films reyalisés par Martin scorcesse stp. SELECT titre FROM films WHERE realisateur = 'Martin Scorsese' 3/3
+9.    Donne les film ou ya Emma Stone. SELECT titre FROM films WHERE ((acteur1 = 'Emma Stone' OR acteur2 = 'Emma Stone' OR acteur3 = 'Emma Stone')) AND ((acteur1 = 'Brad Pitt' OR acteur2 = 'Brad Pitt' OR acteur3 = 'Brad Pitt')); 2/3
+10.   Est ce qu'il y a des film en 1983 ? SELECT acteur1, acteur2, acteur3 FROM films WHERE (acteur1 = 'Sandra Bullock' OR acteur2 = 'Sandra Bullock' OR acteur3 = 'Sandra Bullock') AND genre = 'Thriller'; 0/3
+11.   Quels films de science-fiction ont été réalisés après 2010 ? SELECT titre FROM films WHERE annee BETWEEN 1998 AND 2010; 1/3
+12.   Trouve les films où jouent à la fois Denzel Washington et Tom Cruise. SELECT titre FROM films WHERE ((acteur1 = 'Tom Cruise' OR acteur2 = 'Tom Cruise' OR acteur3 = 'Tom Cruise')) AND ((acteur1 = 'Tom Hanks' OR acteur2 = 'Tom Hanks' OR acteur3 = 'Tom Hanks')); 2/3
+13.   Liste des films de Peter Jackson avec Gal Gadot. SELECT titre FROM films WHERE realisateur = 'Peter Jackson'; 2/3
+14.   Quels sont les films sortis entre 2000 et 2010 de genre comédie ? SELECT * FROM films WHERE annee BETWEEN 2010 AND 2027; 1/3
+15.   Tous les films réalisés par Denis Villeneuve avec au moins un acteur féminin mentionné.SELECT titre FROM films WHERE realisateur = 'Denis Villeneuve'; 2/3
+16.   Quels films ont le mot “Promise” dans le titre ? SELECT realisateur FROM films WHERE titre = 'The Last Promise Files'; 2/3
+17.   Trouve les films où Chris Hemsworth est acteur principal. SELECT titre FROM films WHERE ((acteur1 = 'Chris Hemsworth' OR acteur2 = 'Chris Hemsworth' OR acteur3 = 'Chris Hemsworth')) AND ((acteur1 = 'Chris Evans' OR acteur2 = 'Chris Evans' OR acteur3 = 'Chris Evans')); 2/3
+18.   Quels sont les films réalisés par des réalisateurs dont le prénom est Ron ? SELECT titre FROM films WHERE realisateur = 'Ron Howard'; 2/3
+19.   Quels films ont pour actrice Jennifer Lawrence ? SELECT titre FROM films WHERE (acteur1 = 'Jennifer Lawrence' OR acteur2 = 'Jennifer Lawrence' OR acteur3 = 'Jennifer Lawrence') AND genre = 'Comédie'; 2/3
+20.   Liste des films avec plus d’un acteur masculin. SELECT titre FROM films WHERE (acteur1 = 'Christian Bale' OR acteur2 = 'Christian Bale' OR acteur3 = 'Christian Bale') AND genre = 'Romance'; 0/3
